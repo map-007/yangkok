@@ -19,7 +19,7 @@
     margin: 20px 0;
   }
   .button {
-    min-width: 200px;
+    min-width: 160px;
     height: 40px;
     color: #fff;
     padding: 0 20px;
@@ -31,11 +31,12 @@
     span {
       font-size: 14px;
     }
-    .profileImg {
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-      background: gray;
-    }
+  }
+  .profileImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: gray;
+    margin-left: 10px;
   }
 }

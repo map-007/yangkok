@@ -7,9 +7,11 @@ const LoginPage = () => {
     <div className={style.loginPage}>
       <div className={style.container}>
         <p>တယ်လီဂရမ်ဖြင့် ဝင်ပါ</p>
-        <Link href="/" className={style.button}>
-          <FaTelegramPlane />
-          <span>Login as Guest</span>
+        <div className="flex justify-center items-center ">
+          <Link href="/" className={style.button}>
+            <FaTelegramPlane />
+            <span>Login as Guest</span>
+          </Link>
           <Image
             src="/vercel.svg"
             className={style.profileImg}
@@ -17,7 +19,7 @@ const LoginPage = () => {
             width={20}
             height={20}
           />
-        </Link>
+        </div>
       </div>
     </div>
   );
