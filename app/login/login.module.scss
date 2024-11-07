@@ -13,6 +13,9 @@
   flex-direction: column;
   justify-content: center;
   background: #000;
+  @media screen and (max-width: 400px) {
+    width: 98vw !important;
+  }
   p {
     color: #ee9b00;
     font-size: 20px;
