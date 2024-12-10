@@ -3,6 +3,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import styles from "./home.module.scss";
 import Image from "next/image";
+import { footerItems } from "@/const/footer";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -31,7 +33,30 @@ export default function Home() {
             <p>၁၄၅,၈၀ဝ ကျပ်</p>
           </div>
         </div>
-        <div className={styles.footer}>footer</div>
+        <div className={styles.testImg}>
+          <Image
+            src="/images/text-image.png"
+            layout="fill"
+            alt="test-img"
+            quality={100}
+          />
+        </div>
+        <div className={styles.footer}>
+          <ul>
+            {footerItems.map((item, index) => (
+              <Link href={item.url} key={index}>
+                <li>
+                  <Image
+                    src={item.icon}
+                    alt={item.name}
+                    width={24}
+                    height={24}
+                  />
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
